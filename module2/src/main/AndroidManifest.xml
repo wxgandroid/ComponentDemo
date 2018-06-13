@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wxg.module2">
+
+    <application
+        android:allowBackup="true"
+        android:label="订单模块"
+        android:supportsRtl="true"
+        tools:replace="android:label">
+
+        <activity
+            android:name="com.wxg.module2.Module2Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    </application>
+
+</manifest>

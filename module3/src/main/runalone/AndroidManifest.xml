@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wxg.module3">
+
+    <application
+        android:name="application.Module3Application"
+        android:allowBackup="true"
+        android:label="Module3"
+        android:supportsRtl="true"
+        tools:replace="android:label">
+        <activity android:name="com.wxg.module3.Module3Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

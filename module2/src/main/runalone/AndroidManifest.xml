@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wxg.module2">
+
+    <application
+        android:name="application.Module2Application"
+        android:allowBackup="true"
+        android:label="Module2"
+        android:supportsRtl="true"
+        tools:replace="android:label">
+        <activity
+            android:name="com.wxg.module2.Module2Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

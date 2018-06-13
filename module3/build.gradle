@@ -1,0 +1,38 @@
+apply plugin: 'com.dd.comgradle'
+
+android {
+    compileSdkVersion 26
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':baselib')
+    //每个模块中必须单独添加
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+}
+combuild {
+    applicationName = 'application.Module3Application'
+    isRegisterCompoAuto = false
+}
