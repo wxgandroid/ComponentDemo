@@ -27,6 +27,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':baselib')
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
 }
 combuild {
     applicationName = 'com.wxg.componentdemo.application.MyApplication'
